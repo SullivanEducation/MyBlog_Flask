@@ -1,0 +1,108 @@
+header, section {
+	width: 75%;
+}
+
+header {
+	width: 65%;
+	padding: 5%;
+	padding-top: 20%;
+	background-image: url('../images/bg.jpg');
+	background-size: cover;
+	color: white;
+}
+
+header h1 {
+	font-size: 3em;
+}
+
+.line {
+	width: 15px;
+	border-top: 1px solid white;
+	margin: 10px 0;
+}
+
+section {
+	width: 75%;
+}
+
+section article {
+	padding: 7.5% 5%;
+	color: #666;
+}
+
+section article .line {
+	border-top: 1px solid black;
+}
+
+section article input, section article textarea {
+	display: block;
+	width: 100%;
+}
+
+section article input, section article textarea {
+	padding: 15px 0;
+} 
+
+section article textarea {
+	height: 250px;
+}
+
+section article input[type=submit] {
+	background-color: #f9f9f9;
+	color: #666;
+	border: none;
+}
+
+section article:nth-child(2n) {
+	background-color: #f9f9f9;
+}
+
+section article h2 {
+	font-size: 1.5em;
+	color: #333;
+}
+
+aside {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 20%;
+	height: 100%;
+	padding: 2.5%;
+	padding-top: 5%;
+	background-color: #191d20;
+	font-size: 0.9em;
+	color: white;
+}
+
+aside h3 {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+aside ul {
+	margin-left: 5px;
+	margin-bottom: 25px;
+}
+
+aside ul li {
+	margin-bottom: 5px;
+	opacity: 0.75;
+}
+
+aside ul li a {
+	color: white;
+}
+
+aside ul li:hover {
+	opacity: 1;
+}
+
+aside .action a {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+aside .action img {
+	height: 22.5px;
+}
