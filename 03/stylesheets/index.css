@@ -13,6 +13,7 @@ header {
 
 header h1 {
 	font-size: 3em;
+	text-shadow: 0px 0px 20px black;
 }
 
 .line {
@@ -26,31 +27,12 @@ section {
 }
 
 section article {
-	padding: 7.5% 5%;
+	padding: 5%;
 	color: #666;
 }
 
 section article .line {
 	border-top: 1px solid black;
-}
-
-section article input, section article textarea {
-	display: block;
-	width: 100%;
-}
-
-section article input, section article textarea {
-	padding: 15px 0;
-} 
-
-section article textarea {
-	height: 250px;
-}
-
-section article input[type=submit] {
-	background-color: #f9f9f9;
-	color: #666;
-	border: none;
 }
 
 section article:nth-child(2n) {
@@ -61,6 +43,57 @@ section article h2 {
 	font-size: 1.5em;
 	color: #333;
 }
+
+#list article button {
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 0.9em;
+	color: #999;
+	border: none;
+	border-bottom: 1px solid #999;
+	background: none;
+	margin-right: 5px;
+}
+
+#list article button:hover {
+	color: crimson;
+	border-bottom-color: crimson;
+}
+
+#write {
+	width: 100%;
+}
+
+#write input[type=text], #write textarea {
+	display: inline-block;
+	width: 100%;
+	background: none;
+	font-size: 1.1em;
+	line-height: 1.5;
+}
+
+#write textarea {
+	height: 1000px;
+}
+
+#write input[type=text] {
+	font-size: 3em;
+	margin-bottom: 20px;
+}
+
+#write input[type=submit] {
+	position: fixed;
+	top: 25px;
+	right: 25px;
+	padding: 10px 25px;
+	background-color: #191d20;
+	color: white;
+}
+
+#write input[type=submit]:hover {
+	background-color: crimson;
+}
+
 
 aside {
 	position: fixed;
