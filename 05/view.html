@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SULLIVANPROJECT - {{ 제목 }}</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./stylesheets/normalize.css">
+	<link rel="stylesheet" href="./stylesheets/index.css">
+</head>
+<body id="view">
+	<header>
+		<h1>{{제목}}</h1>
+		<div class="line"></div>
+	</header>
+	<section>
+		<article>
+			<p>
+				국가는 국민 모두의 생산 및 생활의 기반이 되는 국토의 효율적이고 균형있는 이용·개발과 보전을 위하여 법률이 정하는 바에 의하여 그에 관한 필요한 제한과 의무를 과할 수 있다.
+
+				국회의원은 법률이 정하는 직을 겸할 수 없다. 국무회의는 대통령·국무총리와 15인 이상 30인 이하의 국무위원으로 구성한다. 대통령은 전시·사변 또는 이에 준하는 국가비상사태에 있어서 병력으로써 군사상의 필요에 응하거나 공공의 안녕질서를 유지할 필요가 있을 때에는 법률이 정하는 바에 의하여 계엄을 선포할 수 있다.
+
+				국회는 의원의 자격을 심사하며, 의원을 징계할 수 있다. 국가유공자·상이군경 및 전몰군경의 유가족은 법률이 정하는 바에 의하여 우선적으로 근로의 기회를 부여받는다.
+
+				법관은 헌법과 법률에 의하여 그 양심에 따라 독립하여 심판한다. 평화통일정책의 수립에 관한 대통령의 자문에 응하기 위하여 민주평화통일자문회의를 둘 수 있다.
+
+				모든 국민은 사생활의 비밀과 자유를 침해받지 아니한다. 국가안전보장에 관련되는 대외정책·군사정책과 국내정책의 수립에 관하여 국무회의의 심의에 앞서 대통령의 자문에 응하기 위하여 국가안전보장회의를 둔다.
+
+				대통령은 조약을 체결·비준하고, 외교사절을 신임·접수 또는 파견하며, 선전포고와 강화를 한다. 법관이 중대한 심신상의 장해로 직무를 수행할 수 없을 때에는 법률이 정하는 바에 의하여 퇴직하게 할 수 있다.
+
+				국민경제의 발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를 둘 수 있다. 대통령은 국무회의의 의장이 되고, 국무총리는 부의장이 된다.
+			</p>
+		</article>
+		<article class="comment">
+			<p class="cnt">{{개수}}개의 댓글이 있습니다.</p>
+			<form method="POST" action="">
+				<input type="hidden" name="id" value="{{article_id}}">
+				<input type="text" name="nickname" placeholder="닉네임" required>
+				<input type="email" name="email" placeholder="이메일" required>
+				<textarea name="" placeholder="댓글을 입력해주세요." required></textarea>
+				<input type="submit" value="댓글 달기">
+			</form>
+			<div class="wrapper">
+				<p>{{댓글 내용}}</p>
+				<p>{{닉네임}}</p>
+				<p>{{쓴 날짜}}</p>
+			</div>
+		</article>
+	</section>
+</body>
+</html>

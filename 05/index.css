@@ -1,0 +1,217 @@
+header, section {
+	width: 75%;
+}
+
+header {
+	width: 65%;
+	padding: 5%;
+	padding-top: 20%;
+	background-image: url('../images/bg.jpg');
+	background-size: cover;
+	color: white;
+}
+
+header h1 {
+	font-size: 3em;
+	text-shadow: 0px 0px 20px black;
+}
+
+.line {
+	width: 15px;
+	border-top: 1px solid white;
+	margin: 10px 0;
+}
+
+section {
+	width: 75%;
+}
+
+section article {
+	padding: 5%;
+	color: #666;
+}
+
+section article .line {
+	border-top: 1px solid black;
+}
+
+section article:nth-child(2n) {
+	background-color: #f9f9f9;
+}
+
+section article h2 {
+	font-size: 1.5em;
+	color: #333;
+}
+
+#list article button {
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 0.9em;
+	color: #999;
+	border: none;
+	border-bottom: 1px solid #999;
+	background: none;
+	margin-right: 5px;
+}
+
+#list article button:hover {
+	color: crimson;
+	border-bottom-color: crimson;
+}
+
+#write {
+	width: 100%;
+}
+
+#write input[type=text], #write textarea {
+	display: inline-block;
+	width: 100%;
+	background: none;
+	font-size: 1.1em;
+	line-height: 1.5;
+}
+
+#write textarea {
+	height: 1000px;
+}
+
+#write input[type=text] {
+	font-size: 3em;
+	margin-bottom: 20px;
+}
+
+#write input[type=submit] {
+	position: fixed;
+	top: 25px;
+	right: 25px;
+	padding: 10px 25px;
+	background-color: #191d20;
+	color: white;
+}
+
+#write input[type=submit]:hover {
+	background-color: crimson;
+}
+
+
+#view header, #view section{
+	width: 100%;
+}
+
+#view header {
+	padding: 0;
+	padding-top: 20%;
+	padding-bottom: 5%;
+	text-align: center;
+	background-attachment: fixed;
+}
+
+#view header .line {
+	display: block;
+	margin: 10px auto;
+}
+
+#view article {
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+#view .comment > .cnt {
+	font-size: 0.9em;
+	margin-bottom: 20px;
+	color: #999;
+}
+
+#view .comment input, #view .comment textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #F7F7F7;
+	border-radius: 5px;
+}
+
+#view .comment input:hover, #view .comment textarea:hover {
+	border-color: #EEE;
+}
+
+#view .comment input {
+	margin-bottom: 5px;
+}
+
+#view .comment textarea {
+	height: 100px;
+}
+
+#view .comment input[type=submit] {
+	width: calc(100% + 22px);
+	color: white;
+	background-color: #191d20;
+}
+
+#view .wrapper {
+	padding-top: 35px;
+	margin-top: 35px;
+	border-top: 1px solid #EEE;
+}
+
+#view .wrapper p {
+	display: inline-block;
+	font-size: 0.9em;
+	color: #666;
+	margin-right: 10px;
+}
+
+#view .wrapper p:first-child {
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	margin: 0;
+	color: #333;
+}
+
+aside {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 20%;
+	height: 100%;
+	padding: 2.5%;
+	padding-top: 5%;
+	background-color: #191d20;
+	font-size: 0.9em;
+	color: white;
+}
+
+aside h3 {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+aside ul {
+	margin-left: 5px;
+	margin-bottom: 25px;
+}
+
+aside ul li {
+	margin-bottom: 5px;
+	opacity: 0.75;
+}
+
+aside ul li a {
+	color: white;
+}
+
+aside ul li:hover {
+	opacity: 1;
+}
+
+aside .action a {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+aside .action img {
+	height: 22.5px;
+}
