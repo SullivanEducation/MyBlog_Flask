@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SULLIVANPROJECT</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/stylesheets/normalize.css">
+	<link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+<body>
+	<header>
+		<h1>나만의 블로그 개발해보기</h1>
+		<p>오아시스 짱짱!</p>
+		<div class="line"></div>
+        </header>
+	<section id="list">
+        {%for i in list%}
+                <article>
+                <h2><a href="/article/{{i[3]}}">{{i[0]}}</a></h2>
+                        <p>{{i[2]}}</p>
+                </article>
+                {%endfor%}
+	</section>
+	<aside>
+		<h3>NAVIGATION</h3>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li>About</li>
+		</ul>
+		<h3>RECENT POSTS</h3>
+                <ul>
+                    {%for post in recent%}
+                    <li><a href="/article/{{post[1]}}">{{post[0]}}</a></li>
+                        {%endfor%}
+		</ul>
+		<div class="action">
+			<a href="mailto:hiddenest12@gmail.com">
+				<img src="./images/email.svg" alt="Email">
+			</a>
+			<a href="http://dimigo.hs.kr">
+				<img src="./images/fb.svg" alt="Facebook">
+			</a>
+		</div>
+	</aside>
+</body>
+</html>
